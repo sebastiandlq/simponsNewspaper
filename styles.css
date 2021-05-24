@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap');
+
+body{
+    background-color: black;
+}
 .newspaper{
     border: 1px black solid;
     border-radius: 3px;
@@ -6,6 +11,8 @@
 
     margin: auto;
     padding: .5em;
+
+    background-color: #D9D9DB;
 }
 
 .info{
@@ -17,6 +24,13 @@
     border-width: 2px 0 2px 0;
     border-color: black;
     border-style: solid;
+}
+
+.title{
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-weight: 700;
+    
+    letter-spacing: 0.3em;
 }
 
 .title__text{
@@ -46,6 +60,11 @@
     border-width: 2px 0 2px 0;
     border-color: black;
     border-style: solid;
+
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-weight: 700;
+
+    transform: scaleY(1.2);
 }
 
 .left-side__text{
@@ -56,4 +75,8 @@
 
 .new-image{
     width: 100%;
+}
+
+.name{
+    font-family: 'Great Vibes', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
