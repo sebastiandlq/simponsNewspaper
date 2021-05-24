@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap');
+
+body{
+    background-color: black;
+}
+
+.newspaper{
+    background-color: #D9D9DB;
+}
+
+.name{
+    font-family: 'Great Vibes', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title{
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-weight: 700;
+    
+    letter-spacing: 0.3em;
+}
+
+.new__title{
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-weight: 700;
+
+    transform: scaleY(1.2);
+}
