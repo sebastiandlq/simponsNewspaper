@@ -1,18 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: black;
 }
+
 .newspaper{
     border: 1px black solid;
     border-radius: 3px;
-
-    width: 80vw;
-
+    
+    width: 60vw;
+    
     margin: auto;
     padding: .5em;
+    
+    background-color: #D9D9DB;
+
+    position: relative;
+}
+.newspaper::before, .newspaper::after{
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px black solid;
+    border-radius: 10px;
 
     background-color: #D9D9DB;
+
+    z-index: -2;
+}
+.newspaper::before{
+    transform: translate(-10px);
+    z-index: -1;
+}
+.newspaper::after{
+    transform: translate(-20px);
+}
+
+.name{
+    font-family: 'Great Vibes', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    letter-spacing: .5em;
+
+    display: flex;
+    justify-content: center;
+
+    padding: .5em;
 }
 
 .info{
@@ -24,13 +67,18 @@ body{
     border-width: 2px 0 2px 0;
     border-color: black;
     border-style: solid;
+
+    font-size: 1.5em;
+
+    padding: .4em 0;
 }
 
 .title{
     font-family: 'Roboto', 'Courier New', Courier, monospace;
     font-weight: 700;
+    font-size: 2.5em;
     
-    letter-spacing: 0.3em;
+    letter-spacing: 0.4em;
 }
 
 .title__text{
@@ -65,6 +113,8 @@ body{
     font-weight: 700;
 
     transform: scaleY(1.2);
+    
+    margin: 1em 0;
 }
 
 .left-side__text{
@@ -75,8 +125,4 @@ body{
 
 .new-image{
     width: 100%;
-}
-
-.name{
-    font-family: 'Great Vibes', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
